@@ -1,4 +1,4 @@
-package retail
+package com.spark.rdd.retail
 
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.SparkConf

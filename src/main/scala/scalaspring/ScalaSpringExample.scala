@@ -6,13 +6,12 @@ import org.springframework.stereotype.Component
 
 object ScalaSpringExample {
   @Autowired()
-  var kul:Kuldeep=null
+  var kul: TestService = null
   def main(args: Array[String]) {
 
     var context = new AnnotationConfigApplicationContext("scalaspring")
     context.getBeanDefinitionNames.foreach { x => println(x) }
-    var k : Kuldeep = context.getBean(classOf[Kuldeep]);
+    var k: TestService = context.getBean(classOf[TestService]);
     k.abc
-    //kul.abc
   }
 }
